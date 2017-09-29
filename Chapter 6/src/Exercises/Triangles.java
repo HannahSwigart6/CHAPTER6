@@ -24,30 +24,30 @@ public class Triangles {
 				
 				System.out.println("Side A is : " +SquareRoot);
 			}
-//			if (Side == "b" || Side == "B")
-//				{System.out.println("Enter in the side for A.");
-//			SideA = input.nextInt();
-//			
-//			System.out.println("Enter in the side for C.");
-//			SideC = input.nextInt();
-//			
-//			SquareRoot = (int) Math.sqrt((SideA) + Math.sqrt(SideC)); 
-//			
-//			System.out.println("Side B is : " +SquareRoot);
-//				}
-//			if(Side == "c" || Side == "C")
-//			{
-//				System.out.println("Enter in the side for A.");
-//				SideA = input.nextInt();
-//				
-//				System.out.println("Enter in the side for B.");
-//				SideB = input.nextInt();
-//				
-//				SquareRoot = (int) Math.sqrt((SideB) + Math.sqrt(SideA)); 
-//				
-//				System.out.println("Side C is : " +SquareRoot);
-//			}
-//			
+			if (Side.equalsIgnoreCase ("b"))
+				{System.out.println("Enter in the side for A.");
+			SideA = input.nextInt();
+			
+			System.out.println("Enter in the side for C.");
+			SideC = input.nextInt();
+			
+			SquareRoot = (int) Math.sqrt((SideA) + Math.sqrt(SideC)); 
+			
+			System.out.println("Side B is : " +SquareRoot);
+				}
+			if(Side.equalsIgnoreCase("c"))
+		{
+			System.out.println("Enter in the side for A.");
+			SideA = input.nextInt();
+				
+				System.out.println("Enter in the side for B.");
+			SideB = input.nextInt();
+			
+				SquareRoot = (int) Math.sqrt((SideB) + Math.sqrt(SideA)); 
+				
+			System.out.println("Side C is : " +SquareRoot);
+			}
+			
 	}
 	
 
