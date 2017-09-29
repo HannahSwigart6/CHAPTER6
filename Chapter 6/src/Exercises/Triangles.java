@@ -6,53 +6,50 @@ public class Triangles {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		int a=0, b=0, c=0;
-		int side, sideA, sideB, sideC, SquareRoot;
-		
+		String Side = null;
+		double SideA , SideB,SideC, SquareRoot;
+		String ChooseSide;
 		System.out.println("What side are you looking for A, B, or C?");
-		side = input.nextInt();
+		Side = input.nextLine();
 		
-		
-		do
-		{
-			if (side = "A")
+			if (Side.equalsIgnoreCase("A"))
 			{
 				System.out.println("Enter in the side for B.");
-				sideB = input.nextInt();
+				SideB = input.nextInt();
 				
 				System.out.println("Enter in the side for C.");
-				sideC = input.nextInt();
+				SideC = input.nextInt();
 				
-				SquareRoot = (int) Math.sqrt((sideB) + Math.sqrt(sideC)); 
+				SquareRoot = (int) Math.sqrt((SideB) - Math.sqrt(SideC)); 
 				
 				System.out.println("Side A is : " +SquareRoot);
 			}
-			if (side = "B")
-				{System.out.println("Enter in the side for A.");
-			sideB = input.nextInt();
-			
-			System.out.println("Enter in the side for C.");
-			sideC = input.nextInt();
-			
-			SquareRoot = (int) Math.sqrt((sideA) + Math.sqrt(sideC)); 
-			
-			System.out.println("Side B is : " +SquareRoot);
-				}
-			if(side = "C")
-			{
-				System.out.println("Enter in the side for A.");
-				sideB = input.nextInt();
-				
-				System.out.println("Enter in the side for B.");
-				sideC = input.nextInt();
-				
-				SquareRoot = (int) Math.sqrt((sideB) + Math.sqrt(sideA)); 
-				
-				System.out.println("Side C is : " +SquareRoot);
-			}
-			
+//			if (Side == "b" || Side == "B")
+//				{System.out.println("Enter in the side for A.");
+//			SideA = input.nextInt();
+//			
+//			System.out.println("Enter in the side for C.");
+//			SideC = input.nextInt();
+//			
+//			SquareRoot = (int) Math.sqrt((SideA) + Math.sqrt(SideC)); 
+//			
+//			System.out.println("Side B is : " +SquareRoot);
+//				}
+//			if(Side == "c" || Side == "C")
+//			{
+//				System.out.println("Enter in the side for A.");
+//				SideA = input.nextInt();
+//				
+//				System.out.println("Enter in the side for B.");
+//				SideB = input.nextInt();
+//				
+//				SquareRoot = (int) Math.sqrt((SideB) + Math.sqrt(SideA)); 
+//				
+//				System.out.println("Side C is : " +SquareRoot);
+//			}
+//			
 	}
 	
 
 }
-}
+
